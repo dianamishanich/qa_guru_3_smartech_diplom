@@ -1,0 +1,1 @@
+# qa_guru_3_smartech_diplom
