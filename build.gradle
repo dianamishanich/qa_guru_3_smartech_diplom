@@ -44,7 +44,7 @@ dependencies {
             "ch.qos.logback:logback-classic:1.2.3",
             "com.github.javafaker:javafaker:1.0.2",
             "org.aeonbits.owner:owner:1.0.12",
-            "io.qameta.allure:allure-ee-junit-platform:3.39.6",
+            "io.qameta.allure:allure-junit-platform:2.14.0",
             "org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
 }
