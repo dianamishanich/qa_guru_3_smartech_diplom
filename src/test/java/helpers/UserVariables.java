@@ -9,10 +9,13 @@ import org.aeonbits.owner.Config;
 
 public interface UserVariables extends Config {
 
-    @Key("user.login")
-    String userLogin();
+    @Key("user.name")
+    String userName();
 
-    @Key("user.password")
-    String userPassword();
+    @Key("phone.number")
+    String phoneNumber();
+
+    @Key("user.email")
+    String userEmail();
 
 }
