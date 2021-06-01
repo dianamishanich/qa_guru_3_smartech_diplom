@@ -84,13 +84,31 @@ public class SmartechTest extends TestBase {
 
     }
 
-    @Test
+    /*@Test
     @DisplayName("Проверка карусели со спонсорами")
     public void carouselUsingTest() {
         $$("[data-slick-index]").get(8).shouldNotBe(disappear);
         $(".slick-next.slick-arrow").scrollTo().click();
         sleep(2000);
         $$("[data-slick-index]").get(8).shouldBe(visible);
+
+    }*/
+
+    @Test
+    @DisplayName("Проверка карусели со спонсорами")
+    public void carouselUsingTest() {
+        $(".carousel-wrapper [data-slick-index='8']").shouldNotBe(visible);
+        $(".slick-next.slick-arrow").click();
+        $(".carousel-wrapper [data-slick-index='8']").shouldBe(visible);
+
+    }
+
+    @Test
+    @DisplayName("Вращение иконки при наведении")
+    void iconTransformTest() {
+
+        $("[src='/upload/uf/b79/b79387b68ef1ac28994d558ea399ab2d.svg']").hover();
+        $("[src='/upload/uf/b79/b79387b68ef1ac28994d558ea399ab2d.svg']").shouldNotHave(cssClass("transform: rotate3d(0, 0, 0, 0deg"));
 
     }
 
